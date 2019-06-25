@@ -8,5 +8,14 @@ namespace ProjectAnimals
 {
     class Donkey : Animal
     {
+        public Donkey(string parName, int parAge, string parSound) : base(parName, parAge, parSound)
+        {
+
+        }
+
+        public override void Behaviour()
+        {
+            Console.WriteLine("Donkey behaviour is to make noise sounds");
+        }
     }
 }

@@ -10,7 +10,16 @@ namespace ProjectAnimals
     {
         protected string name;
         protected int age;
-        protected string food;
+        protected string sound;
+
+        public Animal() { }
+
+        public Animal(string parName, int parAge, string parSound)
+        {
+            this.name = parName;
+            this.legs = parAge;
+            this.food = parSound;
+        }
 
         public string Name
         {
@@ -24,16 +33,21 @@ namespace ProjectAnimals
             set { age = value; }
         }
 
-        public string Food
+        public string Sound
         {
-            get { return food; }
-            set { food = value; }
+            get { return sound; }
+            set { sound = value; }
         }
 
         public void Description()
         {
-            Console.WriteLine(name + "has" + age + "years and eats" + food);
+            Console.WriteLine(name + "has" + age + "years and makes" + sound);
         }
-            
+
+        public virtual void Behaviour()
+        {
+            Console.WriteLine(name + "has a behaviour");
+        }
+
     }
 }

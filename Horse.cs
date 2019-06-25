@@ -8,5 +8,14 @@ namespace ProjectAnimals
 {
     class Horse : Animal
     {
+        public Horse(string parName, int parAge, string parSound) : base(parName, parAge, parSound)
+        {
+
+        }
+
+        public override void Behaviour()
+        {
+            Console.WriteLine("Horse behaviour is to run");
+        }
     }
 }

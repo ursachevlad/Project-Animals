@@ -8,5 +8,14 @@ namespace ProjectAnimals
 {
     class Hyena : Animal
     {
+        public Hyena(string parName, int parAge, string parSound) : base(parName, parAge, parSound)
+        {
+
+        }
+
+        public override void Behaviour()
+        {
+            Console.WriteLine("Hyena behaviour is to hunt");
+        }
     }
 }
