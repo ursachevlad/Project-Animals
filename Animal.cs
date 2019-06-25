@@ -17,7 +17,7 @@ namespace ProjectAnimals
         public Animal(string parName, int parAge, string parSound)
         {
             this.name = parName;
-            this.legs = parAge;
+            this.age = parAge;
             this.sound = parSound;
         }
 
