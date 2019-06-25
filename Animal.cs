@@ -18,7 +18,7 @@ namespace ProjectAnimals
         {
             this.name = parName;
             this.legs = parAge;
-            this.food = parSound;
+            this.sound = parSound;
         }
 
         public string Name
@@ -46,7 +46,7 @@ namespace ProjectAnimals
 
         public virtual void Behaviour()
         {
-            Console.WriteLine(name + "has a behaviour");
+            Console.WriteLine(name + "has a" + Behaviour);
         }
 
     }
