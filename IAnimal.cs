@@ -2,5 +2,5 @@
 
 interface IAnimal
 {
-    string Sounds();
+    string Sound();
 }
