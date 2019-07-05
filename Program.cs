@@ -11,28 +11,24 @@ namespace ProjectAnimals
         static void Main(string[] args)
         {
             Hyena hyena = new Hyena();
-
             hyena.Name = "Hyena";
             hyena.Sound = "Wawww";
-            hyena.Legs = 4;
-            hyena.Description();
-            hyena.Behaviour();
 
-            Donkey donkey = new Donkey("Picasso", 4, "Iha Iha ha");
-            donkey.Description();
-            donkey.behaviour();
+            Donkey donkey = new Donkey();
+            donkey.Name = "Figaro";
+            donkey.Sound = "Ihaa Ihaaa";
 
-            Pony pony = new Pony("Spark", 4, "Mhaha ha");
-            pony.Description();
-            pony.behaviour();
+            Pony pony = new Pony();
+            pony.Name = "Spark";
+            pony.Sound = "Mhaa mmmm";
 
-            Horse horse = new Horse("Black Beauty", 4, "Mmmha Haa");
-            horse.Description();
-            horse.behaviour();
+            Horse horse = new Horse("");
+            horse.Name = "Black Beauty";
+            horse.Sound = "Mhaa Mhaa";
 
             Lion lion = new Lion("Simba", 4, "Waaaawwwwww");
-            lion.Description();
-            lion.behaviour();
+            lion.Name = "Simba";
+            lion.Sound = "Waawww";
 
             Console.ReadLine();
         }
